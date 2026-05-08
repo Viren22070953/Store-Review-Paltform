@@ -25,6 +25,6 @@ A full-stack web application where users can rate stores, store owners can view 
 Clone the repository:
 
 ```bash
-git clone your-repository-link
+git clone https://github.com/Viren22070953/Store-Review-Paltform
 
 
