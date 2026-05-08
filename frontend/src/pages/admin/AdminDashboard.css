@@ -1,0 +1,129 @@
+.admin-dashboard {
+  min-height: calc(100vh - 48px);
+  padding: 42px 24px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(120, 78, 18, 0.18), transparent 22%),
+    radial-gradient(circle at 88% 82%, rgba(10, 80, 78, 0.16), transparent 20%),
+    #07080d;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.admin-dashboard-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 190, 70, 0.85) 1.5px, transparent 2px),
+    radial-gradient(circle, rgba(255, 190, 70, 0.45) 1px, transparent 2px);
+  background-size: 170px 170px, 260px 260px;
+  background-position: 20px 40px, 90px 110px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.admin-dashboard-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.admin-dashboard-header {
+  margin-bottom: 30px;
+}
+
+.admin-eyebrow {
+  width: fit-content;
+  margin: 0 0 14px;
+  padding: 9px 18px;
+  border: 1px solid rgba(255, 179, 24, 0.45);
+  border-radius: 999px;
+  background: rgba(255, 179, 24, 0.1);
+  color: #ffbf2e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.admin-dashboard h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  line-height: 1;
+  color: #fff;
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 22px;
+}
+
+.admin-stat-card {
+  min-height: 190px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    rgba(18, 19, 26, 0.92);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  transition: 0.25s ease;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 191, 46, 0.32);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.38);
+}
+
+.admin-stat-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.admin-stat-card h1 {
+  margin: 0;
+  color: #ffbf2e;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.admin-stat-card p {
+  margin: 10px 0 0;
+  color: #a6a7af;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-error {
+  width: fit-content;
+  padding: 11px 14px;
+  border-radius: 8px;
+  background: rgba(255, 77, 88, 0.12);
+  color: #ff5f6d;
+}
+
+.admin-loading {
+  color: #a6a7af;
+  font-size: 16px;
+}
+
+@media (max-width: 760px) {
+  .admin-dashboard h2 {
+    font-size: 38px;
+  }
+
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
